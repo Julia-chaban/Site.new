@@ -1,0 +1,581 @@
+*       {
+    margin: 0;
+    padding: 0;
+  }
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+}
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    font-family: inherit;
+  }
+  
+  .top {
+    height: 400px;
+    background-image:url(./img/logocat.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  
+    &__navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 64px;
+    margin-top: 37px;
+    margin-bottom: 36px;
+    align-items: center;
+  }
+  }
+  .logo {
+    font-weight: 198px;
+    height: 44px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    background: rgba(255, 255, 255, 1);
+  }
+  
+  .header__input::placeholder {
+    color: rgba(255, 255, 255, 1);
+  }
+  .option {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+
+    &__links {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: #000;
+    text-decoration: none;
+    font-family: "Montserrat";
+  }
+}
+  .scan {
+    display: flex;
+    gap: 10px;
+  
+  }
+   .filter {
+    position: relative;
+    background-color: transparent;
+    border-radius: 1px;
+    color: #C4C4C4;
+   }
+  .filter-button {
+    width: 182px;
+    height: 40px;
+    border-radius: 16px;
+    appearance: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.5px;
+    padding-left: 23px;
+    padding-top: 9px;
+    padding-right: 54px;
+    padding-bottom: 11px;
+    color: #000;
+    background-image: url(./img/delta.svg);
+    background-repeat: no-repeat;
+    background-position: center right 22px;
+    font-family: "Montserrat";
+    border: 1px solid #C4C4C4;
+   }
+  .filter-button:hover + .boxs,
+  .boxs:hover {
+    display: block;
+  }
+  .boxs {
+    padding-left: 48px;
+    padding-right: 48px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 67px -12px #00000052;
+    top:calc(100% + 14px);
+    right: 0;
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  
+    &__form {
+    min-width: 445px;
+    height: 392px;
+    display: flex;
+    align-items: start;
+    flex-direction: row;
+    gap: 32px;
+    
+  
+  }
+    &__form_filter {
+   border-style: none;
+  }
+    &__form_fieldset {
+    border-style: none;
+  }
+}
+  .filter__form_legend {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    vertical-align: middle;
+    color: #050505;
+    margin-bottom: 16px;
+  }
+  
+  .filter__radio {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 14px;
+  } 
+  #any {
+    appearance: none;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  #any:checked::before {
+   position: absolute;
+    content: "\2714";
+    transform: translateY(-50%);
+    left: 2px;
+    top: 40%;
+    color:inherit;
+  }
+  
+  #today {
+    appearance: none;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  #today:checked::before {
+    position: absolute;
+     content: "\2714";
+     transform: translateY(-50%);
+     left: 2px;
+     top: 40%;
+     color:inherit;
+   }
+  #tomorow {
+    appearance: none;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  #tomorow:checked::before {
+    position: absolute;
+     content: "\2714";
+     transform: translateY(-50%);
+     left: 2px;
+     top: 40%;
+     color:inherit;
+   }
+  #day {
+    appearance: none;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  #day:checked::before {
+    position: absolute;
+     content: "\2714";
+     transform: translateY(-50%);
+     left: 2px;
+     top: 40%;
+     color:inherit;
+   } 
+  #days {
+    appearance: none;
+    background-color: #FFFFFF;
+    width: 15px;
+    height: 15px;
+    border-radius: 60px;
+    border: 1px solid #000;
+    position: relative;
+  }
+  #days:checked::before {
+    position: absolute;
+     content: "\2714";
+     transform: translateY(-50%);
+     left: 2px;
+     top: 40%;
+     color:inherit;
+   }
+  
+  .radio__label {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+    margin-left: 14px;
+    cursor: pointer;
+  }
+  .filter__price_fieldset {
+    border-style: none;
+    width: 190px;
+    height: 73px;
+    margin-bottom: 32px;
+  }
+  .filter__price_legend {
+    width: 44px;
+    height: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    margin-top: 32px;
+    color: #050505;
+    margin-bottom: 14px;
+  }
+  .filter__prices {
+    display: flex;
+    gap: 14px;
+    width: 185px;
+    height: 17px;
+    color: #000;
+    margin-bottom: 14px;
+    font-family: "Montserrat";
+    background-image: url(./img/price.svg);
+  }
+  .range {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  
+      &__input {
+    appearance: none;
+    width: 189px; 
+    height: 2px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    
+  }
+    &__input,
+    &__input::-webkit-slider-runnable-track,
+    &__input::-webkit-slider-thumb {
+      -webkit-appearance: none; 
+      background:none; 
+   }
+  
+  input[type="range"]::-moz-range-track {
+    background: #000;
+    position: absolute;
+  }
+      &__input::-webkit-slider-thumb {
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -4px;
+    border: 1 px solid #000;
+    border-radius: 25px;
+    cursor: pointer;
+    z-index: 1;
+    margin-bottom: -4px;
+  }
+      &__input::-webkit-slider-thumb:active {
+      cursor: grabbing;
+      }
+      &__input::nth-child(1)::-webkit-slider-thumb {
+      z-index: 2;
+      }
+      &__container {
+        font-size: 14px;
+        height: 2px;
+        width: 189px;
+        position: relative;
+        display: inline-block;
+        margin-top: -5px;
+        background-color: #000;
+      }
+      &__container input {
+        position: absolute;
+      }
+}
+  .filter  {
+      &__form_color {
+    display: flex;
+    width: 189px;
+    height: 15px;
+    gap: 14px;
+  }
+      &__form_colors {
+    display: flex;
+    width: 189px;
+    height: 15px;
+    margin-top: 14px;
+    gap: 14px;
+  }
+  
+      &__colors_legend {
+    width: 41px;
+    height: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #050505;
+    margin-bottom: 14px;
+    margin-top: 32px;
+  }
+      &__colors_fieldset {
+    border-style: none;
+  
+  }
+      &__form_room {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+      &__room_legend {
+    width: 110px;
+    height: 20px;
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    vertical-align: middle;
+    color: #050505;
+  
+  }
+      &__form_fieldset {
+    border-style: none;
+  }
+      &__button_apply {
+    border-radius: 20px;
+    min-height: 40px;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px 32px;
+    background-color: #FFFFFF;
+    width: 190px;
+    padding-top: 4px;
+  }
+      &__button_apply:hover {
+    color: #000;
+    transition: 0.3s ease;
+  }
+      &__button {
+    width: 445px;
+    height: 40px;
+    gap: 32px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 36px;
+  }
+   &__button:hover {
+    transition: all 0.3s ease;
+   }
+}
+  .filter-button__pop {
+    width: 227px;
+    font-weight: 400;
+    font-family: "Montserrat";
+  
+    &__pop:hover {
+    transition: all 0.3s ease;
+  }
+}
+  input[type="checkbox"] {
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: relative; 
+    border: 1px solid #888888; 
+  }
+  input[type="checkbox"]:checked::before {
+    position: absolute;
+    content: "\2714";
+    transform: translateY(-50%);
+    left: 2px;
+    top: 40%;
+    color:inherit;
+   }
+  .checkbox  {
+      &__white {
+   border:1px solid #888888;
+    outline: 0px solid;
+    background: #FFFFFF;
+    width: 15px;
+    height: 15px;
+  }
+      &__black {
+    background: #000;
+    outline: 0px solid;
+    width: 15px;
+    height: 15px;
+    color: #FFFFFF;
+  }
+      &__black input {
+    color: inherit;
+  }
+      &__grey {
+    background: #737373;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__green {
+    background: #1CCC97;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+   }
+  
+      &__red {
+    background: #FF0000;
+    width: 15px;
+    height: 15px;
+   
+  }
+      &__orange {
+    background: #FF7A41;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__yellow {
+    background: #F2CB01;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+  
+      &__blue {
+    background: #009FE3;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__dark {
+    background: #000AF8;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__violet {
+    background: #6710D6;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__lilac {
+    background: #D89AFF;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__pink {
+    background: #FF65A6;
+    width: 15px;
+    height: 15px;
+    outline: 0px solid;
+  }
+      &__greens {
+    width: 15px;
+    height: 15px;
+    background: #00BF2A;
+    outline: 0px solid;
+  }
+      &__tur {
+    width: 15px;
+    height: 15px;
+    background: #1CCC97;
+    outline: 0px solid;
+  }
+      &__violet {
+    width: 15px;
+    height: 15px;
+    background: #9D0DB5;
+    outline: 0px solid;
+  }
+  
+      &__label {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #000;
+    margin-left: 14px;
+  }
+}
+ .slash {
+    font-weight: 400;
+    font-size: 16px;
+    color: #000000;
+    width: 6px;
+    height: 32px;
+  }
+  .product  {
+      &__img {
+    width: 100%;
+  }
+      &__one {
+    display: none;
+  }
+}
+  .prod__non {
+    display: none;
+}
+  .a.linki {
+    margin: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration: Auto;
+    text-decoration-thickness: Auto;
+    color: rgba(0, 0, 0, 1);
+    font-family: inherit;
+  }
+  .box  {
+      &__show {
+    margin-top: 32px;
+    margin-bottom: 64px;
+  }
+      &__show_linki {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: Auto;
+    color: #000;
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-family: inherit;
+  }
+}
+
+    
+   

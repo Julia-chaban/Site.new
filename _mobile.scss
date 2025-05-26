@@ -1,0 +1,228 @@
+
+@media(max-width:767px) {
+.center {
+    padding-left: 16px;
+    padding-right: 16px;
+}   
+
+
+.header {
+    padding-top: 32px;
+    border: none;
+    
+    &__input {
+    display: none;
+}
+    &__logo {
+    width: 99px;
+ }  
+}
+a.links {
+    display: none;
+}
+
+.logo__img {
+    width: 99px;
+}
+.menu__mob {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+.top  {
+    &__title {
+    width: 343px;
+    height: 177px;
+    font-size: 48px;
+    line-height: 59px;
+    text-align: center;
+}
+    &__text {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: center;
+   
+}
+    &__navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: flex-start;
+}
+}
+.linki {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 16px;
+
+}
+.spe__title {
+    max-width: 343px;
+    height: 58px;
+    font-weight: 600;
+    font-size: 24px;
+    vertical-align: middle;
+    line-height: 1.2;
+}
+
+.scan {
+    flex-direction: column-reverse;
+}
+.for {
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 16px;
+
+    &__item {
+        grid-column: 1/-1;
+        height: 375px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    &__item_big {
+        height: 244px;
+    }
+    }
+
+.boxs {
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    right: revert;
+
+    &__form {
+    min-width: 190px;
+    height: 755px;
+    display: flex;
+    flex-direction: column;
+}
+}
+.bac {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+
+    &__prod_box {
+    display: none;
+}
+    &__vectors {
+    width: 343px;
+    margin-top: 92px;
+    margin-bottom: 0px;
+}
+    &__vector {
+    width: 343px;
+    margin-bottom: 18px;
+    margin-top: 24px;
+}
+    &__meb {
+    display: none;
+}
+    &__item {
+    flex-wrap: nowrap;
+    margin-top: 0px;
+    width: 343px;
+    height: 167px;
+    top: 492px;
+    left: 16px;
+
+}
+    &__bond {
+    height: 143px;
+ }
+    
+    &__prices_sum {
+    text-align: center;
+}
+    &__clear  {
+    width: 166px;
+    }
+    &__clear:hover {
+    background-color:#fcf0f0;
+    transition: all 0.3s ease;
+    }
+    
+}
+
+button.bac__clear {
+    width: 166px;
+    height: 37px;
+    }
+button.bac__get {
+    width: 163px;
+    height: 37px;
+    background-color: #000;
+    color: #fff;
+    }
+button {
+      font-family:"Montserrat";
+}
+
+.filter   {
+    width: 164px;
+    height: 41px;
+
+    &__button {
+    display: flex;
+    justify-content: flex-start;
+    width: 92px;
+    margin-left: -32px;
+}
+}
+.product  {
+    &__name {
+    font-weight: 400;
+    font-size: 18px;
+   
+}
+    &__description {
+    font-size: 14px;
+   
+}
+    &__price {
+    font-size: 18px;
+    
+}
+    &__price_old {
+    font-size: 18px;
+    
+}
+}
+.product__box_price {
+    gap: 57px;
+}
+.button {
+    margin-left: 14px;
+}
+.box__catalog {
+    margin-top: 36px;
+    margin-bottom: 32px;
+}
+
+.footer  {
+    &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 69px;
+}
+    &__information {
+    gap: 100px;
+    margin-bottom: 69px;
+}
+    &__form {
+        margin-bottom: 33px;
+    }
+}
+.information__title {
+    font-weight: 500;
+}
+}
